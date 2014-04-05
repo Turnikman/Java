@@ -10,9 +10,11 @@ public class Lab12_2 {
         byte age = 25;
         float weight = 70.6f;
         boolean smoke = false;
-        
+
         Show(number, surname, age, weight, smoke);
+        System.out.println();
         Input(number, surname, age, weight, smoke);
+        System.out.println();
         Show(number, surname, age, weight, smoke);
     }
 
