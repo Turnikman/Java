@@ -1,6 +1,7 @@
 package lab1.pkg2_1;
 
-//import lab1.pkg2_1.Reader;
+import java.util.Scanner;
+
 enum FigureColor {
 
     white, red, green, blue, black
@@ -49,7 +50,7 @@ public class Lab12_1 {
                 + "Sports: " + sports + "\n"
                 + "Weight_sm: " + weight_sm + "\n"
                 + "Sex: " + sex + "\n");
-        System.out.println("");
+        System.out.println();
 
         // изменение данных 
         age = 25;
@@ -78,20 +79,42 @@ public class Lab12_1 {
                 + "Sports: " + sports + "\n"
                 + "Weight_sm: " + weight_sm + "\n"
                 + "Sex: " + sex + "\n");
-        System.out.println("");
+        System.out.println();
 
         //Ввод дданых с клавиатуры
-        Reader r = new Reader();
-        r.Scan();
-        System.out.println("Age: " + r.age);
-        System.out.println("RAM: " + r.ram);
-        System.out.println("Surname: " + r.surname);
-        System.out.println("Population: " + r.population);
-        System.out.println("Salary: " + r.salary);
-        System.out.println("Weight_mm: " + r.weight_mm);
-        System.out.println("Stars: " + r.stars);
-        System.out.println("Sportsman?(true or false) " + r.sports);
-        System.out.println("Weight_sm: " + r.weight_sm);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Age: ");
+        age = scan.nextInt();
+        System.out.println("RAM: ");
+        ram = scan.nextFloat();
+        System.out.println("Surname: ");
+        surname = scan.next();
+        System.out.println("Population: ");
+        population = scan.nextInt();
+        System.out.println("Salary: ");
+        salary = scan.nextFloat();
+        System.out.println("Weight_mm: ");
+        weight_mm = scan.nextFloat();
+        System.out.println("Stars: ");
+        stars = scan.nextLong();
+        System.out.println("Sportsman?(true or false) ");
+        sports = scan.nextBoolean();
+        System.out.println("Weight_sm: ");
+        weight_sm = scan.nextFloat();
+        System.out.println();
+        System.out.println(
+                "Age: " + age + "\n"
+                + "RAM: " + ram + "\n"
+                + "Color: " + Color + "\n"
+                + "Surname: " + surname + "\n"
+                + "Population: " + population + "\n"
+                + "Salary: " + salary + "\n"
+                + "Weight_mm: " + weight_mm + "\n"
+                + "Season: " + season + "\n"
+                + "Stars: " + stars + "\n"
+                + "Sports: " + sports + "\n"
+                + "Weight_sm: " + weight_sm + "\n"
+                + "Sex: " + sex + "\n");
 
     }
 
